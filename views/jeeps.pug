@@ -6,7 +6,7 @@ block content
   div(class="container-fluid mt-3")
   div(class="row")
     each jeep,index in jeeps
-        div(class="col-sm-4 bg-info m-1 p-3" style=("font-weight:bolder") onclick=`buy(${index})`) #{jeep.jeepname} - #{jeep.enginemodel} - #{jeep.price}
+        div(class="col-sm-2 bg-info m-1 p-3" style=("font-weight:bolder") onclick=`buy(${index})`) #{jeep.jeepname} - #{jeep.enginemodel} - #{jeep.price}
   script.
      
       function buy(itemNo)
